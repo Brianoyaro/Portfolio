@@ -6,6 +6,7 @@ body {
   background: #f4f4f4;
   color: #333;
   line-height: 1.6;
+  box-sizing: border-box;
 }
 
 /* Header */
@@ -78,4 +79,12 @@ footer {
   color: white;
   padding: 0.5rem;
   margin-top: 2rem;
+}
+
+.social-links {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin:0 auto;
 }
