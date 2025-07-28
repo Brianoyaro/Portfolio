@@ -25,16 +25,16 @@ This is my personal portfolio website, built as part of the PLP Academy Hackatho
 1. Clone this repo or download the files.
 2. Open `index.html` in your browser to preview the site.
 
-## File Structure
-portfolio/ ├── index.html ├── style.css ├── README.md
+3. Alternatively, visit the [live preview](https://brianoyaro.github.io/Portfolio/)
+
 ## Author
 
 **Brian Mokua Oyaro**  
 Email: brianoyaro2000@gmail.com  
 Phone: 0722474626  
 Location: Bamburi, Mombasa, Kenya  
-GitHub: [https://github.com/Brianoyaro]  
-LinkedIn: [https://www.linkedin.com/in/brianmokuaoyaro]
+[GitHub](https://github.com/Brianoyaro) 
+[LinkedIn](https://www.linkedin.com/in/brianmokuaoyaro)
 
 ## License
 
