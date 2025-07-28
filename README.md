@@ -33,8 +33,8 @@ portfolio/ ├── index.html ├── style.css ├── README.md
 Email: brianoyaro2000@gmail.com  
 Phone: 0722474626  
 Location: Bamburi, Mombasa, Kenya  
-GitHub: [GitHub Placeholder]  
-LinkedIn: [LinkedIn Placeholder]
+GitHub: [https://github.com/Brianoyaro]  
+LinkedIn: [https://www.linkedin.com/in/brianmokuaoyaro]
 
 ## License
 
