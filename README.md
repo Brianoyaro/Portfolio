@@ -11,6 +11,21 @@ This is my personal portfolio website, built as part of the PLP Academy Hackatho
 - Projects
 - Contact Form
 
+## Technologies
+
+- Java
+- Spring Boot
+- Spring Security
+- Python
+- JavaScript
+- React
+- Docker & Kubernetes
+
+## Example Projects
+
+- [My-Startup](https://github.com/Brianoyaro/My-Startup) - Example Java + Spring Boot project showcasing authentication and API design.
+- [timamu v2](https://github.com/Brianoyaro/timamu/tree/main/v2) - Telepsychology application built with Flask, React, and LiveKit for secure video consultations.
+
 ## Features
 
 - Built using only HTML and CSS
