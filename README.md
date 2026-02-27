@@ -62,7 +62,7 @@ This portfolio is built with modern web technologies and design principles, feat
 ## 🚀 Getting Started
 
 ### Option 1: View Online
-Visit the <a href="https://brianoyaro.github.io/Portfolio/" target="_blank">live website</a>
+Visit the [live website](https://brianoyaro.github.io/Portfolio/)
 
 ### Option 2: Run Locally
 1. Clone this repository:
