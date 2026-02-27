@@ -129,7 +129,7 @@ Portfolio/
 **Version**: 2.0 (Tailwind CSS Refactor)  
 [GitHub](https://github.com/Brianoyaro) 
 [LinkedIn](https://www.linkedin.com/in/brianmokuaoyaro)
-[Twitter] (https://twitter.com/brianoyaro9)
+[Twitter](https://twitter.com/brianoyaro9)
 
 ## License
 
