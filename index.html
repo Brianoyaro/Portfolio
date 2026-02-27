@@ -1,335 +1,848 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brian Mokua Oyaro - Portfolio</title>
-  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Brian Mokua Oyaro - Software Engineer & Cybersecurity Analyst</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#003366',
+            secondary: '#004488',
+            accent: '#0066cc',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
 </head>
-<body>
-  <!-- Header Section -->
-  <header>
-    <h1>Brian Mokua Oyaro</h1>
-    <p>Software Engineer | Cybersecurity Analyst | React & Node.js Specialist</p>
-    <p>Currently at Bluewaves Plumbers | Building Secure, Scalable Web Solutions</p>
+<body class="bg-gradient-to-br from-gray-50 via-blue-50 to-gray-100 min-h-screen">
+  
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold gradient-text">BMO</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+          <a href="#learning" class="text-gray-700 hover:text-primary transition-colors">Learning</a>
+          <a href="#experience" class="text-gray-700 hover:text-primary transition-colors">Experience</a>
+          <a href="#skills" class="text-gray-700 hover:text-primary transition-colors">Skills</a>
+          <a href="#projects" class="text-gray-700 hover:text-primary transition-colors">Projects</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+        </div>
+        <a href="./assets/BRIAN_MOKUA_OYARO_FlowCV_Resume_2026-02-26.pdf" download class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg transition-all transform hover:scale-105">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary via-secondary to-accent text-white">
+    <div class="max-w-7xl mx-auto text-center fade-in">
+      <div class="mb-6">
+        <div class="w-32 h-32 bg-white/20 rounded-full mx-auto mb-6 flex items-center justify-center backdrop-blur-sm">
+          <span class="text-6xl font-bold">BO</span>
+        </div>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">Brian Mokua Oyaro</h1>
+      <p class="text-xl md:text-2xl mb-2 text-blue-100">Software Engineer | Cybersecurity Analyst</p>
+      <p class="text-lg md:text-xl mb-6 text-blue-200">AWS Solutions Architect in Training | Database Developer</p>
+      <div class="flex justify-center space-x-6 mb-8">
+        <a href="https://github.com/Brianoyaro" target="_blank" class="hover:scale-110 transition-transform">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/brianmokuaoyaro" target="_blank" class="hover:scale-110 transition-transform">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/brianoyaro9" target="_blank" class="hover:scale-110 transition-transform">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="mailto:brianoyaro2000@gmail.com" class="hover:scale-110 transition-transform">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="tel:+254722474626" class="hover:scale-110 transition-transform">
+          <i class="fas fa-phone fa-2x"></i>
+        </a>
+      </div>
+      <div class="inline-flex items-center bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
+        <span class="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
+        <span class="text-sm font-medium">Intern at NCTTCA | Part-time at Bluewaves Plumbers</span>
+      </div>
+    </div>
   </header>
 
-  <!-- About Me -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Agile Software Engineer and Cybersecurity Analyst with 2+ years of experience designing, developing, and deploying scalable, secure software solutions. Possesses strong expertise in Python, JavaScript, React, and cybersecurity analysis with a drive for building secure, scalable, innovative, and user-friendly applications. Currently working as a Software Engineer at Bluewaves Plumbers, where I've increased company reach by 20% through innovative web applications while maintaining robust security standards.</p>
-  </section>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- About Section -->
+    <section id="about" class="mb-16">
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 hover:shadow-2xl transition-shadow">
+        <h2 class="text-4xl font-bold text-primary mb-6 border-b-4 border-primary pb-3">About Me</h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          Agile Software Engineer and Cybersecurity Analyst with 2+ years of experience designing, developing, and deploying scalable, secure software solutions. Possesses strong expertise in Python, JavaScript, React, and cybersecurity analysis with a drive for building secure, scalable, innovative, and user-friendly applications. Currently working as a Software Engineer Intern at NCTTCA, leading the complete revamp of the organization's website and developing internal software projects, while also serving as a Part-time Software Engineer at Bluewaves Plumbers.
+        </p>
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center p-4 bg-blue-50 rounded-lg">
+            <div class="text-3xl font-bold text-primary">2+</div>
+            <div class="text-sm text-gray-600 mt-1">Years Experience</div>
+          </div>
+          <div class="text-center p-4 bg-blue-50 rounded-lg">
+            <div class="text-3xl font-bold text-primary">20%</div>
+            <div class="text-sm text-gray-600 mt-1">Business Growth</div>
+          </div>
+          <div class="text-center p-4 bg-blue-50 rounded-lg">
+            <div class="text-3xl font-bold text-primary">0</div>
+            <div class="text-sm text-gray-600 mt-1">Security Incidents</div>
+          </div>
+          <div class="text-center p-4 bg-blue-50 rounded-lg">
+            <div class="text-3xl font-bold text-primary">10+</div>
+            <div class="text-sm text-gray-600 mt-1">Projects Delivered</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Professional Experience -->
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <div class="experience-item">
-      <h3>Software Engineer - Bluewaves Plumbers</h3>
-      <p class="date">August 2025 - Present</p>
-      <ul>
-        <li>Designed and implemented a web application using JavaScript and React, which <strong>increased the company's reach by 20%</strong></li>
-        <li>Developed and maintained critical features for the company's core product, resulting in a <strong>15% increase in user engagement</strong></li>
-        <li>Implemented security best practices and secure coding standards, ensuring <strong>zero security incidents</strong> in production</li>
-        <li>Optimized application performance, achieving <strong>40% faster load times</strong> and improved user experience</li>
-        <li>Implemented responsive design principles, increasing mobile user retention by <strong>25%</strong></li>
-      </ul>
-    </div>
-    
-    <div class="experience-item">
-      <h3>Software Developer Trainee - Xcelsz</h3>
-      <p class="date">March 2025 - May 2025</p>
-      <ul>
-        <li>Refactored legacy codebase, <strong>reducing technical debt by 30%</strong> and improving maintainability</li>
-        <li>Diagnosed and resolved critical bugs, leading to a <strong>15% increase in system stability</strong> and smoother user experience</li>
-        <li>Implemented automated testing, reducing bug reports by <strong>50%</strong></li>
-      </ul>
-    </div>
-    
-    <div class="experience-item">
-      <h3>Software Engineer Intern - Digital Empowerment Network Pakistan</h3>
-      <p class="date">August 2024 - September 2024</p>
-      <ul>
-        <li>Designed and optimized Node.js APIs in a microservices architecture, <strong>cutting API response times by 25%</strong></li>
-        <li>Containerized microservices with Docker and deployed on Kubernetes, achieving <strong>faster scaling and simplified deployment workflows</strong></li>
-        <li>Improved system reliability by <strong>99.9% uptime</strong> through robust error handling and monitoring</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Current Learning Section -->
+    <section id="learning" class="mb-16">
+      <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl shadow-xl p-8 md:p-12 text-white">
+        <h2 class="text-4xl font-bold mb-6 border-b-4 border-white/30 pb-3">Currently Learning</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-start space-x-4">
+              <div class="bg-orange-500 rounded-lg p-3">
+                <i class="fas fa-cloud fa-2x"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-2xl font-bold mb-2">AWS Solutions Architect</h3>
+                <p class="text-blue-100 mb-4">Mastering cloud architecture, designing scalable systems, and implementing AWS best practices for enterprise-grade applications.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">EC2</span>
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">S3</span>
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Lambda</span>
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">VPC</span>
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">IAM</span>
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">CloudFormation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-start space-x-4">
+              <div class="bg-green-500 rounded-lg p-3">
+                <i class="fas fa-database fa-2x"></i>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-2xl font-bold mb-2">Database Developer</h3>
+                <p class="text-blue-100 mb-4">Advanced database design, optimization, and administration through <a href="https://dbacademy.com/course/view.php?id=7" target="_blank" class="underline hover:text-white">DB Academy</a> comprehensive curriculum.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">SQL Optimization</span>
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">NoSQL</span>
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Database Design</span>
+                  <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Performance Tuning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-8 bg-white/10 backdrop-blur-sm rounded-xl p-6">
+          <div class="flex items-center space-x-4">
+            <i class="fas fa-graduation-cap fa-3x text-yellow-300"></i>
+            <div>
+              <h4 class="text-xl font-bold mb-1">Continuous Learning Commitment</h4>
+              <p class="text-blue-100">Actively pursuing certifications and hands-on projects to stay at the forefront of cloud computing and database technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills & Competencies</h2>
-    <div class="skills-grid">
-      <div class="skill-category">
-        <h3>Programming & Scripting</h3>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>C</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
+    <!-- Professional Experience -->
+    <section id="experience" class="mb-16">
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <h2 class="text-4xl font-bold text-primary mb-8 border-b-4 border-primary pb-3">Professional Experience</h2>
+        
+        <div class="space-y-8">
+          <!-- NCTTCA -->
+          <div class="border-l-4 border-primary pl-6 hover:border-accent transition-colors">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">Software Engineer Intern</h3>
+                <p class="text-lg text-primary font-semibold">National Construction and Training Centre for Africa (NCTTCA)</p>
+              </div>
+              <span class="bg-primary text-white px-4 py-1 rounded-full text-sm mt-2 md:mt-0 inline-block">Jan 2026 - Present</span>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Leading the <strong class="text-primary">complete revamp of the organization's website</strong>, modernizing design and improving user experience</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Developing and maintaining <strong class="text-primary">internal software projects</strong> to streamline organizational operations</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Implementing <strong class="text-primary">responsive design principles</strong> and modern web technologies for enhanced accessibility</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Collaborating with stakeholders to gather requirements and deliver <strong class="text-primary">scalable software solutions</strong></span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Bluewaves Plumbers -->
+          <div class="border-l-4 border-primary pl-6 hover:border-accent transition-colors">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">Part-time Software Engineer</h3>
+                <p class="text-lg text-primary font-semibold">Bluewaves Plumbers</p>
+              </div>
+              <span class="bg-primary text-white px-4 py-1 rounded-full text-sm mt-2 md:mt-0 inline-block">Aug 2025 - Present</span>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Designed and implemented a web application using JavaScript and React, which <strong class="text-primary">increased the company's reach by 20%</strong></span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Developed and maintained critical features for the company's core product, resulting in a <strong class="text-primary">15% increase in user engagement</strong></span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Implemented security best practices and secure coding standards, ensuring <strong class="text-primary">zero security incidents</strong> in production</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Optimized application performance, achieving <strong class="text-primary">40% faster load times</strong> and improved user experience</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Implemented responsive design principles, increasing mobile user retention by <strong class="text-primary">25%</strong></span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Xcelsz -->
+          <div class="border-l-4 border-gray-400 pl-6 hover:border-accent transition-colors">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">Software Developer Trainee</h3>
+                <p class="text-lg text-primary font-semibold">Xcelsz</p>
+              </div>
+              <span class="bg-gray-500 text-white px-4 py-1 rounded-full text-sm mt-2 md:mt-0 inline-block">Mar 2025 - May 2025</span>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Refactored legacy codebase, <strong class="text-primary">reducing technical debt by 30%</strong> and improving maintainability</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Diagnosed and resolved critical bugs, leading to a <strong class="text-primary">15% increase in system stability</strong> and smoother user experience</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Implemented automated testing, reducing bug reports by <strong class="text-primary">50%</strong></span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- DENP -->
+          <div class="border-l-4 border-gray-400 pl-6 hover:border-accent transition-colors">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">Software Engineer Intern</h3>
+                <p class="text-lg text-primary font-semibold">Digital Empowerment Network Pakistan</p>
+              </div>
+              <span class="bg-gray-500 text-white px-4 py-1 rounded-full text-sm mt-2 md:mt-0 inline-block">Aug 2024 - Sep 2024</span>
+            </div>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Designed and optimized Node.js APIs in a microservices architecture, <strong class="text-primary">cutting API response times by 25%</strong></span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Containerized microservices with Docker and deployed on Kubernetes, achieving <strong class="text-primary">faster scaling and simplified deployment workflows</strong></span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Improved system reliability by <strong class="text-primary">99.9% uptime</strong> through robust error handling and monitoring</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="skill-category">
-        <h3>Frameworks & Libraries</h3>
-        <ul>
-          <li>Flask</li>
-          <li>Django</li>
-          <li>Express.js</li>
-          <li>React</li>
-          <li>Tailwind CSS</li>
-          <li>Spring Boot</li>
-          <li>Spring Security</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Databases</h3>
-        <ul>
-          <li>MySQL</li>
-          <li>Redis</li>
-          <li>MongoDB</li>
-          <li>SQLite</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Cybersecurity & Analysis</h3>
-        <ul>
-          <li>SOC Analysis</li>
-          <li>Threat Detection & Response</li>
-          <li>Network Security</li>
-          <li>Penetration Testing</li>
-          <li>OSINT & Reconnaissance</li>
-          <li>Security Tools (Wazuh, Splunk, Nessus)</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Additional Skills</h3>
-        <ul>
-          <li>REST API Development</li>
-          <li>Microservices Architecture</li>
-          <li>Docker & Kubernetes</li>
-          <li>Adaptability & Continuous Learning</li>
-          <li>Leadership & Mentoring</li>
-          <li>Problem-solving & Analytics</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education & Certifications</h2>
-    <div class="education-item">
-      <h3>BSc. Mathematics and Computer Science</h3>
-      <p class="institution">Kenyatta University</p>
-      <p class="date">August 2019 - December 2023</p>
-      <a href="./assets/ku_certificate.pdf" target="_blank">View Certificate</a>
-    </div>
-    
-    <div class="certification-item">
-      <h3>Software Engineering</h3>
-      <p class="institution">ALX</p>
-      <p class="date">June 2023 - July 2024</p>
-      <a href="./assets/17-short-specializations-certificate-brian-mokua.png" target="_blank">View Certificate</a>
-    </div>
-    
-    <div class="certification-item">
-      <h3>Cybersecurity Analysis</h3>
-      <p class="institution">Cybershujaa</p>
-      <p class="date">January 2024 - May 2024</p>
-    </div>
-    
-    <div class="certification-item">
-      <h3>AI Engineering</h3>
-      <p class="institution">PLP Africa</p>
-      <p class="date">July 2025 - Present</p>
-    </div>
-    
-    <div class="certification-item">
-      <h3>KCSE</h3>
-      <p class="institution">Katelembo Boys' Secondary School</p>
-      <p class="date">January 2015 - November 2018</p>
-    </div>
-    
-    <div class="cv-download">
-      <a href="./assets/BRIAN-MOKUA-OYARO-FlowCV-Resume-20251202.pdf" download class="cv-button">Download My CV</a>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="mb-16">
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <h2 class="text-4xl font-bold text-primary mb-8 border-b-4 border-primary pb-3">Skills & Competencies</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Programming & Scripting -->
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-code text-3xl text-primary mr-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">Programming & Scripting</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Python</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">JavaScript</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Java</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">C</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">HTML/CSS</span>
+            </div>
+          </div>
+          
+          <!-- Frameworks & Libraries -->
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-layer-group text-3xl text-purple-600 mr-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">Frameworks & Libraries</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">React</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Node.js</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Express.js</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Flask</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Django</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Spring Boot</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Tailwind CSS</span>
+            </div>
+          </div>
+          
+          <!-- Databases -->
+          <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-database text-3xl text-green-600 mr-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">Databases</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">MySQL</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">MongoDB</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Redis</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">SQLite</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">PostgreSQL</span>
+            </div>
+          </div>
+          
+          <!-- Cloud & DevOps -->
+          <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-cloud text-3xl text-orange-600 mr-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">Cloud & DevOps</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">AWS</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Docker</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Kubernetes</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">CI/CD</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Microservices</span>
+            </div>
+          </div>
+          
+          <!-- Cybersecurity -->
+          <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-shield-alt text-3xl text-red-600 mr-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">Cybersecurity</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">SOC Analysis</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Threat Detection</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Penetration Testing</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Network Security</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Wazuh</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Splunk</span>
+            </div>
+          </div>
+          
+          <!-- Soft Skills -->
+          <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-users text-3xl text-indigo-600 mr-3"></i>
+              <h3 class="text-xl font-bold text-gray-800">Professional Skills</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Leadership</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Problem Solving</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Agile/Scrum</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Team Collaboration</span>
+              <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">Continuous Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <div class="project-item">
-      <h3>Bluewaves Plumbers Web Application</h3>
-      <p class="project-description">Modern, secure web application for plumbing services built with React and JavaScript, implementing security best practices</p>
-      <div class="project-metrics">
-        <span class="metric">📈 20% increase in company reach</span>
-        <span class="metric">⚡ 40% faster load times</span>
-        <span class="metric">📱 25% mobile retention boost</span>
-        <span class="metric">🔒 Zero security incidents</span>
+    <!-- Projects Section -->
+    <section id="projects" class="mb-16">
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <h2 class="text-4xl font-bold text-primary mb-8 border-b-4 border-primary pb-3">Featured Projects</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Bluewaves Plumbers -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 hover:shadow-xl transition-all transform hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-2xl font-bold text-gray-800">Bluewaves Plumbers Web Application</h3>
+              <a href="https://www.bluewavesplumbing.com" target="_blank" class="text-primary hover:text-accent">
+                <i class="fas fa-external-link-alt fa-lg"></i>
+              </a>
+            </div>
+            <p class="text-gray-600 mb-4">Modern, secure web application for plumbing services built with React and JavaScript, implementing security best practices</p>
+            <div class="grid grid-cols-2 gap-2 mb-4">
+              <div class="bg-white p-2 rounded-lg text-center">
+                <div class="text-primary font-bold">+20%</div>
+                <div class="text-xs text-gray-600">Company Reach</div>
+              </div>
+              <div class="bg-white p-2 rounded-lg text-center">
+                <div class="text-primary font-bold">40%</div>
+                <div class="text-xs text-gray-600">Faster Load</div>
+              </div>
+              <div class="bg-white p-2 rounded-lg text-center">
+                <div class="text-primary font-bold">+25%</div>
+                <div class="text-xs text-gray-600">Mobile Retention</div>
+              </div>
+              <div class="bg-white p-2 rounded-lg text-center">
+                <div class="text-primary font-bold">0</div>
+                <div class="text-xs text-gray-600">Security Issues</div>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">React</span>
+              <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs">JavaScript</span>
+              <span class="bg-blue-400 text-white px-3 py-1 rounded-full text-xs">CSS3</span>
+              <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs">Security</span>
+            </div>
+          </div>
+          
+          <!-- My-Startup -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 hover:shadow-xl transition-all transform hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-2xl font-bold text-gray-800">My-Startup (Java/Spring)</h3>
+              <a href="https://github.com/Brianoyaro/My-Startup" target="_blank" class="text-primary hover:text-accent">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </div>
+            <p class="text-gray-600 mb-4">A startup template demonstrating Java backend development with Spring Boot and Spring Security. Includes authentication, role-based access, and RESTful API.</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>Authentication & Authorization</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>RESTful API Design</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span>Relational Database Integration</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs">Java</span>
+              <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs">Spring Boot</span>
+              <span class="bg-green-700 text-white px-3 py-1 rounded-full text-xs">Spring Security</span>
+              <span class="bg-blue-700 text-white px-3 py-1 rounded-full text-xs">MySQL</span>
+            </div>
+          </div>
+          
+          <!-- Timamu v2 -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 hover:shadow-xl transition-all transform hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-2xl font-bold text-gray-800">Timamu v2 - Telepsychology Platform</h3>
+              <a href="https://github.com/Brianoyaro/timamu/tree/main/v2" target="_blank" class="text-primary hover:text-accent">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </div>
+            <p class="text-gray-600 mb-4">Modern telepsychology application enabling secure video consultations between psychologists and patients. Features real-time communication and HIPAA-compliant data handling.</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-video text-blue-500 mr-2"></i>
+                <span>Video Consultations</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-calendar text-green-500 mr-2"></i>
+                <span>Appointment Scheduling</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-shield-alt text-red-500 mr-2"></i>
+                <span>HIPAA Compliance</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-800 text-white px-3 py-1 rounded-full text-xs">Flask</span>
+              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">React</span>
+              <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-xs">LiveKit</span>
+              <span class="bg-indigo-600 text-white px-3 py-1 rounded-full text-xs">WebRTC</span>
+            </div>
+          </div>
+          
+          <!-- E-Vote System -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 hover:shadow-xl transition-all transform hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-2xl font-bold text-gray-800">E-Vote System</h3>
+              <a href="https://github.com/Brianoyaro/e-vote" target="_blank" class="text-primary hover:text-accent">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </div>
+            <p class="text-gray-600 mb-4">Secure online voting system with advanced authentication, encryption, and real-time results monitoring</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-lock text-red-500 mr-2"></i>
+                <span>Advanced Authentication</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-shield-alt text-blue-500 mr-2"></i>
+                <span>End-to-end Encryption</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-chart-line text-green-500 mr-2"></i>
+                <span>Real-time Results & Audit Trail</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-800 text-white px-3 py-1 rounded-full text-xs">Flask</span>
+              <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs">Redis</span>
+              <span class="bg-green-700 text-white px-3 py-1 rounded-full text-xs">MongoDB</span>
+              <span class="bg-purple-600 text-white px-3 py-1 rounded-full text-xs">Cryptography</span>
+            </div>
+          </div>
+          
+          <!-- Property Connect -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 hover:shadow-xl transition-all transform hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-2xl font-bold text-gray-800">Property Connect</h3>
+              <a href="https://github.com/Brianoyaro/property_connect" target="_blank" class="text-primary hover:text-accent">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </div>
+            <p class="text-gray-600 mb-4">Full-stack real estate platform with secure authentication and data protection protocols</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-home text-blue-500 mr-2"></i>
+                <span>Real Estate Platform</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-layer-group text-purple-500 mr-2"></i>
+                <span>Full-stack Solution</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-lock text-red-500 mr-2"></i>
+                <span>Secure Data Handling</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-xs">Express.js</span>
+              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">React</span>
+              <span class="bg-green-700 text-white px-3 py-1 rounded-full text-xs">MongoDB</span>
+              <span class="bg-orange-600 text-white px-3 py-1 rounded-full text-xs">JWT Auth</span>
+            </div>
+          </div>
+          
+          <!-- Maji App -->
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 hover:shadow-xl transition-all transform hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class="text-2xl font-bold text-gray-800">Maji App</h3>
+              <a href="https://github.com/Brianoyaro/Maji" target="_blank" class="text-primary hover:text-accent">
+                <i class="fab fa-github fa-lg"></i>
+              </a>
+            </div>
+            <p class="text-gray-600 mb-4">Water vendor-client platform with secure deployment, monitoring, and incident response capabilities</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-tint text-blue-500 mr-2"></i>
+                <span>Water Service Platform</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-rocket text-purple-500 mr-2"></i>
+                <span>Secure Production Deployment</span>
+              </div>
+              <div class="flex items-center text-sm text-gray-700">
+                <i class="fas fa-chart-bar text-green-500 mr-2"></i>
+                <span>Security Monitoring</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs">Python</span>
+              <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs">Nginx</span>
+              <span class="bg-orange-600 text-white px-3 py-1 rounded-full text-xs">Supervisor</span>
+              <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs">Security</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="project-tech">
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">CSS3</span>
-        <span class="tech-tag">Security</span>
-      </div>
-      <a href="https://www.bluewavesplumbing.com" target="_blank" class="project-link">Visit Live Site</a>
-    </div>
-    
-    <div class="project-item">
-      <h3>My-Startup (Java / Spring)</h3>
-      <p class="project-description">A startup template and example application demonstrating Java backend development with Spring Boot and Spring Security. Includes authentication, role-based access, and a RESTful API.</p>
-      <div class="project-metrics">
-        <span class="metric">🔒 Authentication & Authorization</span>
-        <span class="metric">⚡ RESTful APIs</span>
-        <span class="metric">🗄️ Relational Database</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">Java</span>
-        <span class="tech-tag">Spring Boot</span>
-        <span class="tech-tag">Spring Security</span>
-        <span class="tech-tag">MySQL</span>
-      </div>
-      <a href="https://github.com/Brianoyaro/My-Startup" target="_blank" class="project-link">View Project on GitHub</a>
-    </div>
-    
-    <div class="project-item">
-      <h3>Timamu v2 - Telepsychology Platform</h3>
-      <p class="project-description">Modern telepsychology application enabling secure video consultations between psychologists and patients. Features real-time communication, appointment scheduling, and HIPAA-compliant data handling.</p>
-      <div class="project-metrics">
-        <span class="metric">🎥 Video Consultations</span>
-        <span class="metric">📅 Appointment Scheduling</span>
-        <span class="metric">🔒 HIPAA Compliance</span>
-        <span class="metric">⚡ Real-time Communication</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">Flask</span>
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">LiveKit</span>
-        <span class="tech-tag">WebRTC</span>
-      </div>
-      <a href="https://github.com/Brianoyaro/timamu/tree/main/v2" target="_blank" class="project-link">View Project on GitHub</a>
-    </div>
-    
-    <div class="project-item">
-      <h3>E-Vote System</h3>
-      <p class="project-description">Secure online voting system with advanced authentication, encryption, and real-time results monitoring</p>
-      <div class="project-metrics">
-        <span class="metric">🔒 Advanced Authentication</span>
-        <span class="metric">🛡️ End-to-end Encryption</span>
-        <span class="metric">⚡ Real-time Results</span>
-        <span class="metric">🔍 Audit Trail</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">Flask</span>
-        <span class="tech-tag">Redis</span>
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">Cryptography</span>
-      </div>
-      <a href="https://github.com/Brianoyaro/e-vote" target="_blank" class="project-link">View Project</a>
-    </div>
-    
-    <div class="project-item">
-      <h3>Security-Focused API Infrastructure</h3>
-      <p class="project-description">Microservices architecture with implemented security monitoring, threat detection, and automated incident response</p>
-      <div class="project-metrics">
-        <span class="metric">🔍 25% faster threat detection</span>
-        <span class="metric">🛡️ 99.9% uptime security monitoring</span>
-        <span class="metric">⚡ Automated incident response</span>
-        <span class="metric">📊 Real-time security analytics</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">Docker</span>
-        <span class="tech-tag">Kubernetes</span>
-        <span class="tech-tag">Security Monitoring</span>
-      </div>
-    </div>
-    
-    <div class="project-item">
-      <h3>Property Connect</h3>
-      <p class="project-description">Full-stack real estate platform with secure authentication and data protection protocols</p>
-      <div class="project-metrics">
-        <span class="metric">🏠 Real Estate Platform</span>
-        <span class="metric">🔧 Full-stack Solution</span>
-        <span class="metric">🔒 Secure Data Handling</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">Express.js</span>
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">JWT Auth</span>
-      </div>
-      <a href="https://github.com/Brianoyaro/property_connect" target="_blank" class="project-link">View Project</a>
-    </div>
-    
-    <div class="project-item">
-      <h3>Maji App</h3>
-      <p class="project-description">Water vendor-client platform with secure deployment, monitoring, and incident response capabilities</p>
-      <div class="project-metrics">
-        <span class="metric">🌊 Water Service Platform</span>
-        <span class="metric">🚀 Secure Production Deployment</span>
-        <span class="metric">📊 Security Monitoring</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">Nginx</span>
-        <span class="tech-tag">Supervisor</span>
-        <span class="tech-tag">Security</span>
-      </div>
-      <a href="https://github.com/Brianoyaro/Maji" target="_blank" class="project-link">View Project</a>
-    </div>
-  </section>
+    </section>
 
-  <!-- Cybersecurity Focus -->
-  <section id="cybersecurity">
-    <h2>Cybersecurity Expertise</h2>
-    <div class="security-focus">
-      <div class="security-item">
-        <h3>🛡️ SOC Analysis & Threat Detection</h3>
-        <p>Experienced in Security Operations Center analysis, threat hunting, and incident response. Skilled in identifying and mitigating security threats in real-time environments.</p>
+    <!-- Cybersecurity Expertise -->
+    <section id="cybersecurity" class="mb-16">
+      <div class="bg-gradient-to-br from-red-600 to-red-800 rounded-2xl shadow-xl p-8 md:p-12 text-white">
+        <h2 class="text-4xl font-bold mb-8 border-b-4 border-white/30 pb-3">Cybersecurity Expertise</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-start space-x-4">
+              <div class="bg-white/20 rounded-lg p-3">
+                <i class="fas fa-shield-alt fa-2x"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold mb-3">SOC Analysis & Threat Detection</h3>
+                <p class="text-red-100">Experienced in Security Operations Center analysis, threat hunting, and incident response. Skilled in identifying and mitigating security threats in real-time environments.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-start space-x-4">
+              <div class="bg-white/20 rounded-lg p-3">
+                <i class="fas fa-bug fa-2x"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold mb-3">Penetration Testing & Vulnerability Assessment</h3>
+                <p class="text-red-100">Conducting comprehensive security assessments, identifying vulnerabilities, and implementing remediation strategies to strengthen system defenses.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-start space-x-4">
+              <div class="bg-white/20 rounded-lg p-3">
+                <i class="fas fa-network-wired fa-2x"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold mb-3">Network Security & Incident Response</h3>
+                <p class="text-red-100">Monitoring network traffic, implementing security protocols, and developing incident response procedures to maintain robust digital infrastructure.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-start space-x-4">
+              <div class="bg-white/20 rounded-lg p-3">
+                <i class="fas fa-tools fa-2x"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold mb-3">Security Tools & Technologies</h3>
+                <p class="text-red-100">Proficient with Wazuh, Splunk, OSSEC, Nessus, Snort, Wireshark, Autopsy, Volatility, and various OSINT tools for comprehensive security analysis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      
-      <div class="security-item">
-        <h3>🔍 Penetration Testing & Vulnerability Assessment</h3>
-        <p>Conducting comprehensive security assessments, identifying vulnerabilities, and implementing remediation strategies to strengthen system defenses.</p>
-      </div>
-      
-      <div class="security-item">
-        <h3>🌐 Network Security & Incident Response</h3>
-        <p>Monitoring network traffic, implementing security protocols, and developing incident response procedures to maintain robust digital infrastructure.</p>
-      </div>
-      
-      <div class="security-item">
-        <h3>⚙️ Security Tools & Technologies</h3>
-        <p>Proficient with Wazuh, Splunk, OSSEC, Nessus, Snort, Wireshark, Autopsy, Volatility, and various OSINT tools for comprehensive security analysis.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>If you would like to get in touch, feel free to reach out via email or phone.</p>
-    <p>Email: <a href="mailto:brianoyaro2000@gmail.com">brianoyaro2000@gmail.com</a></p>
-    <p>Phone: <a href="tel:+254722474626">+254 722 474 626</a></p>
-  </section>
-  
+    <!-- Education & Certifications -->
+    <section id="education" class="mb-16">
+      <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <h2 class="text-4xl font-bold text-primary mb-8 border-b-4 border-primary pb-3">Education & Certifications</h2>
+        
+        <div class="space-y-6">
+          <!-- Degree -->
+          <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border-l-4 border-primary hover:shadow-lg transition-shadow">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">BSc. Mathematics and Computer Science</h3>
+                <p class="text-lg text-primary font-semibold">Kenyatta University</p>
+              </div>
+              <span class="bg-primary text-white px-4 py-1 rounded-full text-sm mt-2 md:mt-0">Aug 2019 - Dec 2023</span>
+            </div>
+            <a href="./assets/ku_certificate.pdf" target="_blank" class="text-accent hover:text-primary font-medium inline-flex items-center mt-2">
+              <i class="fas fa-certificate mr-2"></i>View Certificate
+            </a>
+          </div>
+          
+          <!-- ALX Software Engineering -->
+          <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border-l-4 border-purple-600 hover:shadow-lg transition-shadow">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">Software Engineering</h3>
+                <p class="text-lg text-purple-600 font-semibold">ALX Africa</p>
+              </div>
+              <span class="bg-purple-600 text-white px-4 py-1 rounded-full text-sm mt-2 md:mt-0">Jun 2023 - Jul 2024</span>
+            </div>
+            <a href="./assets/17-short-specializations-certificate-brian-mokua.png" target="_blank" class="text-purple-600 hover:text-purple-800 font-medium inline-flex items-center mt-2">
+              <i class="fas fa-certificate mr-2"></i>View Certificate
+            </a>
+          </div>
+          
+          <!-- Cybersecurity -->
+          <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-xl p-6 border-l-4 border-red-600 hover:shadow-lg transition-shadow">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+              <div>
+                <h3 class="text-2xl font-bold text-gray-800">Cybersecurity Analysis</h3>
+                <p class="text-lg text-red-600 font-semibold">Cybershujaa</p>
+              </div>
+              <span class="bg-red-600 text-white px-4 py-1 rounded-full text-sm mt-2 md:mt-0">Jan 2024 - May 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-16">
+      <div class="bg-gradient-to-br from-primary via-secondary to-accent rounded-2xl shadow-xl p-8 md:p-12 text-white">
+        <h2 class="text-4xl font-bold mb-6 border-b-4 border-white/30 pb-3">Let's Connect</h2>
+        <p class="text-xl text-blue-100 mb-8">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-center space-x-4">
+              <div class="bg-white/20 rounded-full p-4">
+                <i class="fas fa-envelope fa-2x"></i>
+              </div>
+              <div>
+                <div class="text-sm text-blue-200 mb-1">Email</div>
+                <a href="mailto:brianoyaro2000@gmail.com" class="text-lg font-semibold hover:text-blue-200 transition-colors">brianoyaro2000@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-center space-x-4">
+              <div class="bg-white/20 rounded-full p-4">
+                <i class="fas fa-phone fa-2x"></i>
+              </div>
+              <div>
+                <div class="text-sm text-blue-200 mb-1">Phone</div>
+                <a href="tel:+254722474626" class="text-lg font-semibold hover:text-blue-200 transition-colors">+254 722 474 626</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-center space-x-4">
+              <div class="bg-white/20 rounded-full p-4">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </div>
+              <div>
+                <div class="text-sm text-blue-200 mb-1">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/brianmokuaoyaro" target="_blank" class="text-lg font-semibold hover:text-blue-200 transition-colors">brianmokuaoyaro</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-center space-x-4">
+              <div class="bg-white/20 rounded-full p-4">
+                <i class="fab fa-github fa-2x"></i>
+              </div>
+              <div>
+                <div class="text-sm text-blue-200 mb-1">GitHub</div>
+                <a href="https://github.com/Brianoyaro" target="_blank" class="text-lg font-semibold hover:text-blue-200 transition-colors">Brianoyaro</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all">
+            <div class="flex items-center space-x-4">
+              <div class="bg-white/20 rounded-full p-4">
+                <i class="fab fa-twitter fa-2x"></i>
+              </div>
+              <div>
+                <div class="text-sm text-blue-200 mb-1">Twitter / X</div>
+                <a href="https://twitter.com/brianoyaro9" target="_blank" class="text-lg font-semibold hover:text-blue-200 transition-colors">@brianoyaro9</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-8 text-center">
+          <p class="text-blue-100 flex items-center justify-center">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            Bamburi, Mombasa, Kenya
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Brian Mokua Oyaro. All rights reserved.</p>
-    <address>Bamburi, Mombasa, Kenya</address>
-    <div class="social-links">
-      <p>
-        <a href="https://github.com/Brianoyaro" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-      </p>
-      <p>
-        <a href="https://www.linkedin.com/in/brianmokuaoyaro" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-      </p>
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://github.com/Brianoyaro" target="_blank" class="hover:text-blue-400 transition-colors">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/brianmokuaoyaro" target="_blank" class="hover:text-blue-400 transition-colors">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/brianoyaro9" target="_blank" class="hover:text-blue-400 transition-colors">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="mailto:brianoyaro2000@gmail.com" class="hover:text-blue-400 transition-colors">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </div>
+      <p class="text-gray-400 mb-2">&copy; 2026 Brian Mokua Oyaro. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+    
+    // Add fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '0';
+          entry.target.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            entry.target.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>

@@ -1,55 +1,135 @@
 # Brian Mokua Oyaro - Personal Portfolio
 
-This is my personal portfolio website, built as part of the PLP Academy Hackathon Challenge. It showcases my skills, education, projects, and contact information in a clean, responsive design.
+Welcome to my professional portfolio website! This modern, responsive portfolio showcases my journey as a Software Engineer and Cybersecurity Analyst, featuring my skills, projects, education, and current learning endeavors.
 
-## Sections Included
+## 🎯 Overview
 
-- About Me
-- Technical Skills
-- Education & Certifications
-- Interests
-- Projects
-- Contact Form
+This portfolio is built with modern web technologies and design principles, featuring:
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+- **Modern UI/UX**: Clean, professional design with smooth animations and transitions
+- **Tailwind CSS**: Utility-first CSS framework for rapid, maintainable styling
+- **Performance Optimized**: Fast loading times and smooth user experience
 
-## Technologies
+## 📋 Sections Included
 
-- Java
-- Spring Boot
-- Spring Security
-- Python
-- JavaScript
-- React
-- Docker & Kubernetes
+- **About Me**: Professional summary with key metrics and achievements
+- **Currently Learning**: AWS Solutions Architect & Database Developer training
+- **Professional Experience**: Detailed work history with quantifiable achievements
+- **Skills & Competencies**: Categorized technical and professional skills
+- **Featured Projects**: Portfolio of completed projects with live demos and source code
+- **Cybersecurity Expertise**: Specialized security skills and tools
+- **Education & Certifications**: Academic background and professional certifications
+- **Contact**: Multiple channels to connect (email, phone, LinkedIn, GitHub)
 
-## Example Projects
+## 🚀 Technologies
 
-- [My-Startup](https://github.com/Brianoyaro/My-Startup) - Example Java + Spring Boot project showcasing authentication and API design.
-- [timamu v2](https://github.com/Brianoyaro/timamu/tree/main/v2) - Telepsychology application built with Flask, React, and LiveKit for secure video consultations.
+### Frontend
+- **HTML5**: Semantic markup
+- **Tailwind CSS**: Modern utility-first CSS framework
+- **JavaScript**: Interactive features and smooth scrolling
+- **Font Awesome**: Icon library for enhanced visual appeal
 
-## Features
+### Backend & Development Skills
+- Java, Python, JavaScript, C
+- Spring Boot, Flask, Django, Express.js, React
+- MySQL, MongoDB, Redis, PostgreSQL
+- Docker, Kubernetes, AWS
+- Cybersecurity tools (Wazuh, Splunk, Nessus)
 
-- Built using only HTML and CSS
-- Responsive design for all devices
-- Clean, semantic markup with modern styles
-- Downloadable CV
-- Viewing of certificates
-- Mail-to contact form
+## 🌟 Key Features
 
-## Getting Started
+- **Mobile-First Design**: Optimized for all screen sizes
+- **Smooth Animations**: Fade-in effects and hover transitions
+- **Fixed Navigation**: Easy access to all sections
+- **Downloadable CV**: Latest resume in PDF format
+- **Live Project Links**: Direct links to GitHub repositories and live demos
+- **Professional Color Scheme**: Blue gradient theme conveying trust and professionalism
+- **SEO Optimized**: Proper meta tags and semantic HTML
 
-1. Clone this repo or download the files.
-2. Open `index.html` in your browser to preview the site.
+## 📚 Current Learning Path
 
-3. Alternatively, visit the [live preview](https://brianoyaro.github.io/Portfolio/)
+- **AWS Solutions Architect**: Cloud architecture and AWS services
+- **Database Developer**: Advanced SQL, NoSQL, and database optimization via [DB Academy](https://dbacademy.com/course/view.php?id=7)
 
-## Author
+## 🎨 Design Highlights
+
+- Gradient backgrounds for visual interest
+- Card-based layouts for better content organization
+- Color-coded skill categories for easy navigation
+- Interactive hover effects on all clickable elements
+- Consistent spacing and typography throughout
+
+## 🚀 Getting Started
+
+### Option 1: View Online
+Visit the [live website](https://brianoyaro.github.io/Portfolio/)
+
+### Option 2: Run Locally
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Brianoyaro/Portfolio.git
+   ```
+2. Navigate to the directory:
+   ```bash
+   cd Portfolio
+   ```
+3. Open `index.html` in your web browser:
+   ```bash
+   open index.html
+   # or
+   firefox index.html
+   # or simply double-click the file
+   ```
+
+## 📦 Project Structure
+
+```
+Portfolio/
+├── index.html              # Main HTML file with Tailwind CSS
+├── README.md              # This file
+├── assets/                # Media files and documents
+│   ├── BRIAN_MOKUA_OYARO_FlowCV_Resume_2026-02-26.pdf
+│   ├── certificates...
+│   └── ...
+├── styles/                # Legacy CSS (kept for reference)
+└── temp/                  # Backup of old files
+```
+
+## 🔗 Featured Projects
+
+1. **Bluewaves Plumbers** - React-based web application with 20% business growth impact
+2. **My-Startup** - Java/Spring Boot authentication system
+3. **Timamu v2** - HIPAA-compliant telepsychology platform
+4. **E-Vote System** - Secure online voting with encryption
+5. **Property Connect** - Full-stack real estate platform
+6. **Maji App** - Water service management system
+
+## 📫 Contact
 
 **Brian Mokua Oyaro**  
-Email: brianoyaro2000@gmail.com  
-Phone: 0722474626  
-Location: Bamburi, Mombasa, Kenya  
+- **Email**: brianoyaro2000@gmail.com  
+- **Phone**: +254 722 474 626  
+- **Location**: Bamburi, Mombasa, Kenya  
+- **LinkedIn**: [brianmokuaoyaro](https://www.linkedin.com/in/brianmokuaoyaro)  
+- **GitHub**: [Brianoyaro](https://github.com/Brianoyaro)
+
+## 📝 License
+
+© 2026 Brian Mokua Oyaro. All rights reserved.
+
+## 🙏 Acknowledgments
+
+- Built with Tailwind CSS for modern, responsive design
+- Icons by Font Awesome
+- Hosted on GitHub Pages
+
+---
+
+**Last Updated**: February 2026  
+**Version**: 2.0 (Tailwind CSS Refactor)  
 [GitHub](https://github.com/Brianoyaro) 
 [LinkedIn](https://www.linkedin.com/in/brianmokuaoyaro)
+[Twitter] (https://twitter.com/brianoyaro9)
 
 ## License
 
