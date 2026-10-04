@@ -735,6 +735,87 @@
           </div>
         </article>
 
+        <!-- Job Application Tracker -->
+        <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-lg">
+          <div class="mb-5">
+            <p class="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-sky-700">
+              Featured Project
+            </p>
+            <h3 class="text-2xl font-semibold text-slate-900">Job Application Tracker</h3>
+          </div>
+
+          <p class="mb-4 leading-relaxed text-slate-600">
+            Built a Chrome extension and FastAPI service that help job seekers capture
+            applications, track their progress, and review job-search statistics.
+          </p>
+
+          <ul class="mb-5 list-disc space-y-2 pl-5 text-sm text-slate-700">
+            <li>Chrome popup for saving applications from the current tab</li>
+            <li>Automatic job-page capture to help prefill company, title, and location</li>
+            <li>Dashboard with search, status filters, and application statistics</li>
+            <li>Application editing and status-change history</li>
+            <li>Google sign-in with application data stored in SQLite</li>
+          </ul>
+
+          <div class="mb-5 flex flex-wrap gap-2">
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">Chrome Extension</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">JavaScript</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">HTML</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">CSS</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">Python</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">FastAPI</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">SQLite</span>
+          </div>
+
+          <div class="border-t border-slate-200 pt-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Impact</p>
+            <p class="mt-2 text-sm text-slate-700">
+              Created a single place to record job applications, follow each opportunity
+              through its hiring stages, and see an overview of the job search.
+            </p>
+          </div>
+        </article>
+
+        <!-- OpenAQ Data Engineering -->
+        <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-sky-300 hover:shadow-lg">
+          <div class="mb-5">
+            <p class="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-sky-700">
+              Data Engineering Project
+            </p>
+            <h3 class="text-2xl font-semibold text-slate-900">OpenAQ Air Quality Pipeline</h3>
+          </div>
+
+          <p class="mb-4 leading-relaxed text-slate-600">
+            Built a scheduled data pipeline that collects air quality measurements from OpenAQ
+            for locations around Nairobi, loads them into PostgreSQL, and transforms them into
+            analytics-ready models with dbt.
+          </p>
+
+          <ul class="mb-5 list-disc space-y-2 pl-5 text-sm text-slate-700">
+            <li>Apache Airflow orchestrates the daily extraction workflow</li>
+            <li>Collects locations, sensors, and paginated measurements from the OpenAQ API</li>
+            <li>Writes raw measurements as JSONL files before loading them into PostgreSQL</li>
+            <li>Uses dbt staging and intermediate models to prepare the data</li>
+            <li>Builds dimensional models for locations, parameters, sensors, and measurements</li>
+          </ul>
+
+          <div class="mb-5 flex flex-wrap gap-2">
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">Python</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">Apache Airflow</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">OpenAQ API</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">PostgreSQL</span>
+            <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-700">dbt</span>
+          </div>
+
+          <div class="border-t border-slate-200 pt-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Impact</p>
+            <p class="mt-2 text-sm text-slate-700">
+              Creates a structured foundation for analyzing air quality measurements by location,
+              sensor, and parameter.
+            </p>
+          </div>
+        </article>
+
         <!-- Telehealth -->
         <article class="rounded-2xl border border-slate-200 p-6 transition duration-300 hover:border-sky-300 hover:shadow-lg">
           <div class="flex items-start justify-between mb-4">
